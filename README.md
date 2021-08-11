@@ -15,12 +15,12 @@ const [isOpen, handleOpen, handleClose, toggle] = useModal();
 ```
 
 Event handler for btn:
-```ts
+```tsx
 <button onClick={() => toggle()}>Open Modal</button>
 ```
 
 And the modal herself:
-```ts
+```tsx
 <Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose}>
   <h1>Hello, i'm default modal</h1>
 </Modal>
@@ -29,7 +29,7 @@ And the modal herself:
 ## Also modal have different types.
 Centered:
 Vertically center the modal.
-```ts
+```tsx
 <Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose} center>
   <h1>Hello, i'm centered modal</h1>
 </Modal
@@ -37,7 +37,7 @@ Vertically center the modal.
 
 Static:
 When backdrop is set to static, the modal will not close when clicking outside it.
-```ts
+```tsx
 <Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose} backdrop>
   <h1>Hello, i'm static modal</h1>
 </Modal
@@ -45,7 +45,7 @@ When backdrop is set to static, the modal will not close when clicking outside i
 
 Scrolled:
 When modals become too long for the user’s viewport or device, they scroll independent of the page itself.
-```ts
+```tsx
 <Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose} scroll>
   <h1>Hello, from scroll modal</h1>
 </Modal
