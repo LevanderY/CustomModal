@@ -2,7 +2,7 @@
 
 ## How to use?
 
-First u shoul to import Modal and useModal hook from component:
+First u should to import Modal and useModal hook from component:
 
 ```ts
 import { Modal, useModal } from "./components/Modal";
@@ -26,4 +26,25 @@ And the modal herself:
 </Modal>
 ```
 
+## Also modal have different types
+Centered:
+```ts
+<Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose} center>
+  <h1>Hello, i'm centered modal</h1>
+</Modal
+```
+
+Static:
+```ts
+<Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose} backdrop>
+  <h1>Hello, i'm static modal</h1>
+</Modal
+```
+
+Scrolled:
+```ts
+<Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose} scroll>
+  <h1>Hello, from scroll modal</h1>
+</Modal
+```
 
