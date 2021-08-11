@@ -52,7 +52,7 @@ When modals become too long for the user’s viewport or device, they scroll ind
 ```
 
 ## We can call many modals in the same component:
-```ts
+```tsx
 import React from "react";
 
 import { Modal, useModal } from "./components/Modal";
