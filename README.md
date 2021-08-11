@@ -63,19 +63,18 @@ const ModalsBoxDemo: React.FC = () => {
 
 	return (
 		<div>
-			{/* A default modal */}
-			<button onClick={() => toggle()}>Open default Modal</button>
+		 <button onClick={() => toggle()}>Open default Modal</button>
+			
+		 <button onClick={() => isStaticToggle()}>Open static Modal</button>
+			
+			
+		 <Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose}>
+			<h1>Hello, i'm default modal</h1>
+		 </Modal>
 
-			<Modal isOpen={isOpen} handleOpen={handleOpen} handleClose={handleClose}>
-				<h1>Hello, i'm default modal</h1>
-			</Modal>
-
-			{/* A static background modal */}
-			<button onClick={() => isStaticToggle()}>Open static Modal</button>
-
-			<Modal isOpen={isStaticOpen} handleOpen={handleStaticOpen} handleClose={handleStaticClose} backdrop>
-				<h1>Hello, i'm static modal</h1>
-			</Modal>
+		 <Modal isOpen={isStaticOpen} handleOpen={handleStaticOpen} handleClose={handleStaticClose} backdrop>
+			<h1>Hello, i'm static modal</h1>
+		 </Modal>
 
 	);
 };
